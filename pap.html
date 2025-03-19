@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuttack Times - Atashi Sinha</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f5f5, #dcdcdc);
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .header {
+            background: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+            gap: 20px;
+        }
+        .main-story {
+            width: 65%;
+            background: white;
+            padding: 25px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .main-story:hover {
+            transform: scale(1.05);
+        }
+        .side-news, .extra-news {
+            display: flex;
+            gap: 20px;
+        }
+        .news-item, .extra-news-item {
+            background: white;
+            padding: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            width: 30%;
+        }
+        .news-item:hover, .extra-news-item:hover {
+            transform: rotate(2deg) scale(1.02);
+        }
+        .news-item img, .extra-news-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .news-item h2, .extra-news-item h2 {
+            font-size: 22px;
+            transition: color 0.3s ease-in-out;
+        }
+        .news-item h2:hover, .extra-news-item h2:hover {
+            color: #0077ff;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .main-story {
+                width: 80%;
+            }
+            .news-item, .extra-news-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 15px;
+            }
+            .main-story {
+                width: 100%;
+                padding: 15px;
+            }
+            .side-news, .extra-news {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            .news-item, .extra-news-item {
+                width: 90%;
+            }
+            .header {
+                font-size: 24px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">ATASHI TIMES</div>
+    <div class="container">
+        <div class="main-story">
+            <img src="./images/Screenshot 2025-03-19 203720.png" alt="Atashi Sinha" style="max-width: 100%; border-radius: 10px;">
+            <h1>Atashi Sinha Turns 21</h1>
+            <p>Celebrations and surprises filled the day as Atashi Sinha celebrated their 21st birthday with close friends and family. Today marks a momentous occasion as a remarkable individual steps into their 21st year, a milestone that symbolizes growth, experience, and the boundless potential of the future. This birthday is more than just a celebration—it is a testament to the journey of the past two decades, filled with laughter, learning, and moments that have shaped the person they have become.
+
+                Turning 21 is a significant transition, representing newfound independence and the freedom to embrace life’s opportunities with open arms. It is a time when dreams take shape, responsibilities expand, and the world opens up with endless possibilities. Over the past three years, this journey has been one of shared joy, challenges overcome, and deep connections formed, making this milestone all the more meaningful.
+                
+                As well-wishers gather to celebrate, the atmosphere is filled with excitement and anticipation for what lies ahead. Every birthday serves as a reflection of past achievements and a stepping stone toward future aspirations. This day is not just about growing older but growing wiser, stronger, and more prepared for the adventures to come.</p>
+        </div>
+        <div class="side-news">
+            <div class="news-item">
+                <img src="./images/Screenshot 2025-03-19 205715.png" alt="Upcoming CUET Topper">
+                <h2>Atashi Sinha: Upcoming CUET Topper</h2>
+                <p>With a track record of excellence, Atashi is set to top CUET.</p>
+            </div>
+            <div class="news-item">
+                <img src="./images/Screenshot 2025-03-19 205919.png" alt="Best Cook and Baker">
+                <h2>Atashi Sinha: Best Cook & Baker</h2>
+                <p>From gourmet dishes to stunning pastries, Atashi does it all.</p>
+            </div>
+            <div class="news-item">
+                <img src="./images/Screenshot 2025-03-19 210514.png" alt="Best Girlfriend">
+                <h2>Atashi Sinha: Best Girlfriend</h2>
+                <p>Supportive, loving, and caring—the perfect partner in every way.</p>
+            </div>
+        </div>
+    </div>
+    <div class="extra-news">
+        <div class="extra-news-item">
+            <img src="./images/Screenshot 2025-03-19 210557.png" alt="Strong Personality">
+            <h2>Atashi Sinha: A Strong Personality</h2>
+            <p>Her resilience and confidence inspire everyone around her.</p>
+        </div>
+        <div class="extra-news-item">
+            <img src="./images/Screenshot 2025-03-19 211336.png" alt="Best Person">
+            <h2>Atashi Sinha: The Best Person</h2>
+            <p>Compassionate, intelligent, and kind—Atashi shines in every way.</p>
+        </div>
+    </div>
+</body>
+</html>

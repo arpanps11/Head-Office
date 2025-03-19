@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Atashi Sinha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #6B1D76;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: "Playfair Display", serif;
+    }
+    .envelope-container {
+      position: relative;
+      width: 500px;
+      height: 350px;
+      cursor: pointer;
+    }
+    .envelope {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: 4px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+    .envelope-flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: #e0e0e0;
+      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+      transition: transform 0.5s ease;
+      transform-origin: top;
+    }
+    .letter {
+      position: absolute;
+      width: 85%;
+      height: 70%;
+      background: #fff;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: top 0.5s ease;
+      text-align: center;
+      overflow-y: auto;
+    }
+    .letter img {
+      display: block;
+      max-width: 100%;
+      margin: 10px auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+    .letter h1, .letter h2, .letter p {
+      margin-bottom: 10px;
+    }
+    .open .envelope-flap {
+      transform: rotateX(180deg);
+    }
+    .open .letter {
+      top: 10%;
+    }
+  </style>
+</head>
+<body>
+  <div class="envelope-container" onclick="toggleEnvelope()">
+    <div class="envelope">
+      <div class="envelope-flap"></div>
+      <div class="letter">
+        <h1>Happy Birthday, My Love! </h1>
+        <p>Three years ago, you walked into my life and turned it into something truly beautiful. Every moment with you has been a blessing, from our silly jokes to our deep conversations, from our adventures to our quiet, peaceful nights.
+            
+            You are my love, my best friend, and my greatest happiness. With each passing year, my love for you only grows stronger. Thank you for being you—kind, loving, and absolutely amazing.
+            
+            On your special day, I just want to remind you how much you mean to me. I promise to keep making you smile, to always be by your side, and to love you more with every heartbeat.
+            
+            Happy Birthday, my love! Here’s to many more years of laughter, love, and unforgettable memories. 💖✨</p>
+        <img src="./images/envolop.png" alt="Birthday Photo">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleEnvelope() {
+      document.querySelector('.envelope-container').classList.toggle('open');
+      launchConfetti();
+    }
+
+    function launchConfetti() {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('birthday-bg.jpg') center/cover no-repeat;
+    text-align: center;
+    color: white;
+    height: 100vh;
+}
+
+.birthday-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffcc00;
+}
+
+button {
+    padding: 15px 20px;
+    background: #ff5e62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #e04b50;
+}
+
+/* Confetti */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
