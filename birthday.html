@@ -8,7 +8,7 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background-color: #d1c8fd	;
+      background-color: #d1c8fd;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -74,6 +74,18 @@
     .open .letter {
       top: 10%;
     }
+    .back-button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      background-color: #a58df5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
   </style>
 </head>
 <body>
@@ -95,6 +107,7 @@ Wishing you all the happiness your heart can hold, and a future filled with ever
 the Lord make His face shine on you and be gracious to you.”<br>
 — Numbers 6:24–25</p>
         <img src="./images/envolop.png" alt="Birthday Photo">
+        <button class="back-button" onclick="event.stopPropagation(); goBack();">Go Back</button>
       </div>
     </div>
   </div>
@@ -111,6 +124,10 @@ the Lord make His face shine on you and be gracious to you.”<br>
         spread: 70,
         origin: { y: 0.6 }
       });
+    }
+
+    function goBack() {
+      window.history.back(); // Or use a specific URL: window.location.href = "index.html";
     }
   </script>
 </body>
