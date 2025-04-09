@@ -18,11 +18,13 @@
     }
 
     .envelope-container {
-      position: relative;
-      width: 600px;
-      height: 450px;
-      cursor: pointer;
-    }
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  aspect-ratio: 4 / 3; /* maintains width:height ratio */
+  cursor: pointer;
+}
+
 
     .envelope {
       position: relative;
@@ -51,6 +53,7 @@
       position: absolute;
       width: 85%;
       height: 70%;
+      max-height: 80%;
       background: #fff;
       border: 2px solid #ccc;
       border-radius: 5px;
