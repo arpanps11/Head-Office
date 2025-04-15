@@ -47,14 +47,14 @@ body {
 }
 
 .tagline {
-  font-size: 1.5rem; /* Normal size for "Happy Birthday" */
+  font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: normal;
 }
 
 .headline {
   font-family: 'Dancing Script', cursive;
-  font-size: 4rem; /* Large and prominent "Sophia Rout" */
+  font-size: 4rem;
   color: #FF8C00;
   margin-bottom: 10px;
 }
@@ -205,11 +205,11 @@ video {
   }
 
   .tagline {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 
   .headline {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 
   .subheadline {
@@ -223,11 +223,11 @@ video {
   }
 
   .tagline {
-    font-size: 3rem;
+    font-size: 1.3rem;
   }
 
   .headline {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 
   .subheadline {
@@ -263,11 +263,11 @@ video {
   }
 
   .tagline {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
   }
 
   .headline {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .subheadline {
