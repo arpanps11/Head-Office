@@ -9,61 +9,49 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(135deg, #f2f2f2, #ffffff);
   color: #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
 }
 
 /* Hero Section */
 .hero {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #d1c8fd;
-  padding: 100px;
   flex-wrap: wrap;
-  width: 100%;
-  will-change: transform;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1c8fd;
+  padding: 80px 20px;
 }
 
 .hero-text {
-  max-width: 50%;
+  flex: 1 1 400px;
+  max-width: 600px;
+  padding: 20px;
   color: black;
-  min-width: 300px;
-  order: 1;
+  text-align: center;
 }
 
 .tagline {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #333;
-  font-weight: normal;
 }
 
 .headline {
   font-family: 'Dancing Script', cursive;
-  font-size: 7rem;
-  margin-bottom: 10px;
+  font-size: 4rem;
   color: #FF8C00;
-  line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 .subheadline {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
   color: black;
+  margin-bottom: 20px;
 }
 
 .description {
   font-size: 1rem;
-  margin-bottom: 20px;
   color: black;
+  margin-bottom: 20px;
 }
 
 .cta-btn {
@@ -83,11 +71,10 @@ body {
 }
 
 .hero-image {
+  flex: 1 1 300px;
   max-width: 500px;
-  width: 100%;
   text-align: center;
-  margin-top: 20px;
-  order: 2;
+  margin-top: 30px;
 }
 
 .photo-frame {
@@ -100,7 +87,6 @@ body {
 }
 
 .photo-frame img {
-  display: block;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -108,21 +94,34 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Video Section */
+.video-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container video {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* Banner Section */
 .banner {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 70vh;
   background: url('/Head-Office/Head-off-pics/IMG-20250119-WA0005.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  margin-top: 50px;
-  overflow: hidden;
-  min-height: 400px;
-  will-change: transform;
 }
 
 .overlay {
@@ -137,15 +136,12 @@ body {
   z-index: 2;
   max-width: 90%;
   padding: 20px;
-  text-align: center;
 }
 
 .content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   margin-bottom: 20px;
 }
 
@@ -154,10 +150,8 @@ body {
   padding: 14px 28px;
   background-color: #6B1D76;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  border: none;
-  cursor: pointer;
   border-radius: 30px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -168,49 +162,15 @@ body {
   transform: scale(1.08);
 }
 
-/* Responsive Styling */
-@media (max-width: 1024px) {
-  .hero {
-    padding: 60px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text {
-    max-width: 100%;
-    order: 2;
-  }
-
-  .hero-image {
-    max-width: 100%;
-    order: 1;
-    margin-bottom: 30px;
-  }
-
-  .tagline {
-    font-size: 2rem;
-  }
-
-  .headline {
-    font-size: 4.5rem;
-  }
-
-  .subheadline {
-    font-size: 1.5rem;
-  }
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
   .hero {
-    padding: 40px;
-  }
-
-  .tagline {
-    font-size: 1.5rem;
+    flex-direction: column;
+    padding: 60px 20px;
   }
 
   .headline {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .subheadline {
@@ -218,16 +178,19 @@ body {
   }
 
   .description {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .cta-btn {
-    font-size: 0.9rem;
-    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .video-container {
+    margin: 30px 0;
   }
 
   .banner {
-    min-height: 300px;
+    height: 60vh;
   }
 
   .content h1 {
@@ -236,19 +199,11 @@ body {
 
   .btn {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 10px 22px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero {
-    padding: 20px;
-  }
-
-  .tagline {
-    font-size: 1.2rem;
-  }
-
   .headline {
     font-size: 2.5rem;
   }
@@ -258,16 +213,12 @@ body {
   }
 
   .description {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   .cta-btn {
-    font-size: 0.8rem;
-    padding: 8px 16px;
-  }
-
-  .banner {
-    min-height: 250px;
+    font-size: 0.85rem;
+    padding: 10px 18px;
   }
 
   .content h1 {
@@ -276,6 +227,5 @@ body {
 
   .btn {
     font-size: 0.9rem;
-    padding: 8px 16px;
   }
 }
