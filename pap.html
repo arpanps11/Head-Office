@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sophia Rout</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
@@ -19,8 +19,7 @@
     .header {
       background: #d1c8fd;
       color: black;
-      padding: 20px 0;
-      text-align: center;
+      padding: 20px;
       font-size: 28px;
       font-weight: 700;
       font-family: 'Playfair Display', serif;
@@ -33,6 +32,7 @@
       opacity: 0;
       animation: fadeIn 1s ease-in forwards;
       width: 100vw;
+      text-align: center;
       margin: 0;
     }
 
@@ -45,7 +45,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 30px 20px;
+      padding: 30px;
       gap: 20px;
     }
 
@@ -69,7 +69,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 0 20px 30px;
+      padding: 0 30px 30px;
     }
 
     .news-item,
@@ -114,6 +114,7 @@
       color: #0077ff;
     }
 
+    /* Responsive Styles */
     @media (max-width: 1024px) {
       .main-story {
         width: 80%;
@@ -149,7 +150,7 @@
 
       .header {
         font-size: 24px;
-        padding: 15px 0;
+        padding: 15px;
       }
     }
 
@@ -175,8 +176,61 @@
 <body>
   <div class="header">SOPHIA ROUT</div>
 
-  <!-- main content -->
-  <!-- (You can paste the same HTML from before, as that part hasn't changed) -->
+  <div class="container">
+    <div class="main-story">
+      <img src="/Head-Office/Head-off-pics/IMG-20250203-WA0004.jpg" alt="Sophia Rout" style="max-width: 100%; border-radius: 10px;">
+      <h1><span translate="no">Ningal Ethra Best ❤️</span></h1>
+      <p>
+        Dear Head Office Madam,<br><br>
+        There’s so much I could say, but none of it would ever fully capture how special you are to me...
+        <br><br>
+        Happy Birthday again.<br>
+        Ninte Arpan.
+      </p>
+    </div>
+  </div>
 
+  <div class="side-news">
+    <div class="news-item">
+      <img src="/Head-Office/Head-off-pics/IMG_20250409_224247.jpg" alt="Sophia Rout">
+      <h2>Sophia Rout: Best Daughter and Sister</h2>
+      <p>She gives without being asked, helps without being told, and loves without condition...</p>
+    </div>
+    <div class="news-item">
+      <img src="/Head-Office/Head-off-pics/IMG-20241216-WA0015.jpg" alt="Sophia Rout">
+      <h2>Sophia Rout: Best Human</h2>
+      <p>She’s the kind of human who makes you believe the world still has good in it...</p>
+    </div>
+    <div class="news-item">
+      <img src="/Head-Office/Head-off-pics/IMG_20250409_225521.jpg" alt="Sophia Rout">
+      <h2>Sophia Rout: Best Friend</h2>
+      <p>The kind of friend who is always there and just gets it — no explanations, no judgment...</p>
+    </div>
+  </div>
+
+  <div class="extra-news">
+    <div class="extra-news-item">
+      <img src="/Head-Office/Head-off-pics/Screenshot_2025-04-08-19-26-17-29_99c04817c0de5652397fc8b56c3b3817.jpg" alt="Sophia Rout">
+      <h2>Sophia Rout: Best Singer</h2>
+      <p>She’s not the loudest in the room, but her voice is a soft thread in the song...</p>
+    </div>
+    <div class="extra-news-item">
+      <img src="/Head-Office/Head-off-pics/IMG-20250409-WA0007.jpg" alt="Sophia Rout">
+      <h2>Sophia Rout: Best Artist</h2>
+      <p>She creates beauty without even realizing it...</p>
+    </div>
+    <div class="extra-news-item-new">
+      <img src="/Head-Office/Head-off-pics/WhatsApp Image 2025-04-13 at 4.10.57 PM.jpeg" alt="Sophia Rout">
+      <h2>Sophia Rout: Best Muse</h2>
+      <p>If I could turn every thought of you into music, this would be the playlist...
+        <br>
+        <a href="https://open.spotify.com/playlist/7LRTDkSbquZY3yCbd5z0R0?si=45BGuG1YT3-VwW6-KUtDCQ&pi=5W_JPrRUS9CND" target="_blank" style="color: #0077ff; text-decoration: underline;">
+          Click here for the Sophia Rout playlist
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <button class="back-button" onclick="window.history.back();">⬅️ Back</button>
 </body>
 </html>
