@@ -203,35 +203,31 @@ video {
     order: 1;
     margin-bottom: 30px;
   }
-
-  .tagline {
-    font-size: 1.5rem;
-  }
-
-  .headline {
-    font-size: 3.5rem;
-  }
-
-  .subheadline {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 40px;
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    max-width: 100%;
+    order: unset;
   }
 
   .tagline {
-    font-size: 1.3rem;
+    font-size: 1.2rem !important;
   }
 
   .headline {
-    font-size: 3rem;
+    font-size: 2.2rem !important;
   }
 
   .subheadline {
-    font-size: 1.2rem;
+    font-size: 1rem !important;
   }
 
   .description {
@@ -263,15 +259,15 @@ video {
   }
 
   .tagline {
-    font-size: 1.2rem;
+    font-size: 1rem !important;
   }
 
   .headline {
-    font-size: 2.5rem;
+    font-size: 1.8rem !important;
   }
 
   .subheadline {
-    font-size: 1rem;
+    font-size: 0.9rem !important;
   }
 
   .description {
