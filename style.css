@@ -32,11 +32,10 @@ body {
   max-width: 50%;
   color: black;
   min-width: 300px;
-  order: 1; 
+  order: 1;
 }
 
 .tagline {
-  
   font-size: 2rem;
   margin-bottom: 10px;
 }
@@ -82,7 +81,7 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 20px;
-  order: 2; 
+  order: 2;
 }
 
 .photo-frame {
@@ -103,11 +102,25 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Video Section */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  width: 100%;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Banner Section */
 .banner {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 90vh;
   background: url('/Head-Office/Head-off-pics/IMG-20250119-WA0005.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -116,6 +129,7 @@ body {
   color: white;
   margin-top: 50px;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .overlay {
@@ -129,36 +143,37 @@ body {
   position: relative;
   z-index: 2;
   max-width: 90%;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
 .content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .btn {
   display: inline-block;
-  padding: 14px 28px;
+  padding: 16px 32px;
   background-color: #6B1D76;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   border: none;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .btn:hover {
   background-color: #521458;
-  transform: scale(1.08);
+  transform: scale(1.1);
 }
 
 /* Responsive Styling */
@@ -191,6 +206,14 @@ body {
   .subheadline {
     font-size: 1.5rem;
   }
+
+  .banner {
+    height: 70vh;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -220,7 +243,7 @@ body {
   }
 
   .banner {
-    height: 70vh;
+    height: 60vh;
   }
 
   .content h1 {
@@ -260,7 +283,7 @@ body {
   }
 
   .banner {
-    height: 60vh;
+    height: 55vh;
   }
 
   .content h1 {
