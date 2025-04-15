@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <!-- Video Section (Above Banner) -->
+    <!-- Video Section -->
     <div class="video-container">
       <video id="birthday-video" autoplay loop muted playsinline>
         <source src="./images/videoplayback.mp4" type="video/mp4" />
@@ -48,6 +48,7 @@
       </video>
     </div>
 
+    <!-- Banner Section -->
     <div class="banner">
       <div class="overlay"></div>
       <div class="content">
@@ -90,31 +91,16 @@
           }, 300);
         }
 
-        // Start music when page is active
         document.addEventListener("visibilitychange", () => {
           if (document.hidden) {
-            fadeOutMusic(); // Fade out when tab is inactive
+            fadeOutMusic();
           } else {
-            fadeInMusic(); // Resume and fade in when tab is active
+            fadeInMusic();
           }
         });
 
-        fadeInMusic(); // Auto-play music on page load
+        fadeInMusic();
       });
     </script>
-
-    <style>
-      .video-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 0;
-      }
-
-      video {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
   </body>
 </html>
