@@ -188,7 +188,7 @@ video {
 /* Floating Animated Button */
 .fixed-btn {
   position: fixed;
-  bottom: max(20px, env(safe-area-inset-bottom));
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #6B1D76;
@@ -234,6 +234,10 @@ video {
     max-width: 100%;
     order: 1;
     margin-bottom: 30px;
+  }
+
+  .fixed-btn {
+    bottom: 15px;
   }
 }
 
@@ -283,6 +287,10 @@ video {
     font-size: 1rem;
     padding: 10px 20px;
   }
+
+  .fixed-btn {
+    bottom: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -322,5 +330,9 @@ video {
   .btn {
     font-size: 0.9rem;
     padding: 8px 16px;
+  }
+
+  .fixed-btn {
+    bottom: 25px;
   }
 }
