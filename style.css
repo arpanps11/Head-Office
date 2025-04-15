@@ -178,23 +178,43 @@ video {
   border-radius: 30px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
-  animation: pulse 1.5s infinite;
 }
 
 .btn:hover {
   background-color: #521458;
-  transform: translateX(-50%) scale(1.08);
+  transform: scale(1.08);
+}
+
+/* Floating Animated Button */
+.fixed-btn {
+  position: fixed;
+  bottom: max(20px, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6B1D76;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  z-index: 9999;
+  animation: pulse 2s infinite;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 90%;
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(165, 141, 245, 0.6); }
-  70% { box-shadow: 0 0 0 20px rgba(165, 141, 245, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(165, 141, 245, 0); }
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.08);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
 }
 
 /* Responsive Styling */
