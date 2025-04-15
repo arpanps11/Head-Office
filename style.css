@@ -5,6 +5,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(135deg, #f2f2f2, #ffffff);
@@ -15,6 +19,13 @@ body {
   align-items: center;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+.hero,
+.banner,
+.video-container {
+  will-change: transform;
+  contain: layout paint;
 }
 
 /* Hero Section */
@@ -90,7 +101,7 @@ body {
   border: 10px solid #fff;
   border-radius: 12px;
   background-color: #fefefe;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .photo-frame img {
@@ -108,7 +119,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 50px 0;
-  width: 100%;
 }
 
 video {
@@ -120,8 +130,9 @@ video {
 .banner {
   position: relative;
   width: 100%;
-  height: 90vh;
+  min-height: 80vh;
   background: url('/Head-Office/Head-off-pics/IMG-20250119-WA0005.jpg') no-repeat center center/cover;
+  background-attachment: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,7 +140,6 @@ video {
   color: white;
   margin-top: 50px;
   overflow: hidden;
-  border-radius: 20px;
 }
 
 .overlay {
@@ -143,17 +153,17 @@ video {
   position: relative;
   z-index: 2;
   max-width: 90%;
-  padding: 40px 20px;
+  padding: 30px;
   text-align: center;
 }
 
 .content h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .btn {
@@ -165,15 +175,14 @@ video {
   font-weight: bold;
   border: none;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 30px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .btn:hover {
   background-color: #521458;
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 /* Responsive Styling */
@@ -206,14 +215,6 @@ video {
   .subheadline {
     font-size: 1.5rem;
   }
-
-  .banner {
-    height: 70vh;
-  }
-
-  .content h1 {
-    font-size: 3rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -243,7 +244,7 @@ video {
   }
 
   .banner {
-    height: 60vh;
+    min-height: 70vh;
   }
 
   .content h1 {
@@ -283,7 +284,7 @@ video {
   }
 
   .banner {
-    height: 55vh;
+    min-height: 60vh;
   }
 
   .content h1 {
