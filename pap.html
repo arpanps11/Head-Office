@@ -7,6 +7,12 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -14,6 +20,7 @@
       background: linear-gradient(135deg, #f5f5f5, #dcdcdc);
       color: #333;
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
 
     .header {
@@ -33,7 +40,6 @@
       opacity: 0;
       animation: fadeIn 1s ease-in forwards;
       width: 100%;
-      margin: 0;
     }
 
     @keyframes fadeIn {
@@ -157,32 +163,34 @@
     }
 
     .back-button {
-  display: block;
-  margin: 30px auto;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-family: 'Playfair Display', serif;
-  background-color: #a58df5;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
+      display: block;
+      margin: 40px auto 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-family: 'Playfair Display', serif;
+      background-color: #a58df5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
     .back-button:hover {
       background-color: #8b76db;
     }
 
     .footer {
-  width: 100vw;
-  text-align: center;
-  padding: 20px;
-  background-color: #d1c8fd;
-  color: #333;
-  font-size: 16px;
-  box-sizing: border-box;
-}
+      width: 100vw;
+      text-align: center;
+      padding: 20px;
+      background-color: #d1c8fd;
+      color: #333;
+      font-size: 16px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
     .footer p {
       margin: 5px 0;
@@ -195,6 +203,7 @@
 </head>
 <body>
   <div class="header">SOPHIA ROUT</div>
+
   <div class="container">
     <div class="main-story">
       <img src="/Head-Office/Head-off-pics/IMG-20250203-WA0004.jpg" alt="Sophia Rout" style="max-width: 100%; border-radius: 10px;">
@@ -244,24 +253,21 @@
       <h2>Sophia Rout: Best Artist</h2>
       <p>She creates beauty without even realizing it. Her hands express what words can’t. She’ll never say her work is special—but it is. It always is.</p>
     </div>
-    <!-- New extra news tile -->
     <div class="extra-news-item-new">
       <img src="/Head-Office/Head-off-pics/WhatsApp Image 2025-04-13 at 4.10.57 PM.jpeg" alt="Sophia Rout">
       <h2>Sophia Rout: Best Muse</h2>
       <p>If I could turn every thought of you into music, this would be the playlist. It’s your 20th birthday, so here are 20 songs that remind me of you. There’s a little story in each of these 20 songs. Some are about you. Some are about how I feel because of you. Some hold a special memory of you. All are for you.<br>
         <a href="https://open.spotify.com/playlist/7LRTDkSbquZY3yCbd5z0R0?si=45BGuG1YT3-VwW6-KUtDCQ&pi=5W_JPrRUS9CND" target="_blank" style="color: #0077ff; text-decoration: underline;">
-    Click here for the Sophia Rout playlist</a>
+          Click here for the Sophia Rout playlist</a>
       </p>
     </div>
   </div>
 
- <div class="footer">
-  <p>Made with all my heart, for my heart ❤️</p>
-  <p>Always and forever,</p>
-  <p>Arpan.</p>
-</div>
+  <button class="back-button" onclick="window.history.back();">⬅️ Back</button>
 
-<button class="back-button" onclick="window.history.back();">⬅️ Back</button>
-
+  <div class="footer">
+    <p>Made with all my heart, for my heart ❤️</p>
+    <p>Always and forever, Arpan.</p>
+  </div>
 </body>
 </html>
