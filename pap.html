@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sophia Rout</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
@@ -193,11 +193,21 @@
     .footer .heart {
       font-size: 20px;
     }
+
+    /* Fix for truncation and overflow issues */
+    .main-story p,
+    .news-item p,
+    .extra-news-item p,
+    .extra-news-item-new p {
+      overflow: visible;
+      text-overflow: initial;
+      white-space: normal;
+      display: block;
+    }
   </style>
 </head>
 <body>
   <div class="header">SOPHIA ROUT</div>
-
   <div class="container">
     <div class="main-story">
       <img src="/Head-Office/Head-off-pics/IMG-20250203-WA0004.jpg" alt="Sophia Rout" style="max-width: 100%; border-radius: 10px;">
@@ -222,17 +232,17 @@
     <div class="news-item">
       <img src="/Head-Office/Head-off-pics/IMG_20250409_224247.jpg" alt="Sophia Rout">
       <h2>Sophia Rout: Best Daughter and Sister</h2>
-      <p>She gives without being asked, helps without being told, and loves without condition...</p>
+      <p>She gives without being asked, helps without being told, and loves without condition. The kind of daughter every parent is grateful for—and the kind of sister who’ll roast you one second and defend you the next. It’s love, always. Loud, honest, and unshakable.</p>
     </div>
     <div class="news-item">
       <img src="/Head-Office/Head-off-pics/IMG-20241216-WA0015.jpg" alt="Sophia Rout">
       <h2>Sophia Rout: Best Human</h2>
-      <p>She’s the kind of human who makes you believe the world still has good in it...</p>
+      <p>She’s the kind of human who makes you believe the world still has good in it. Someone who lifts others without even realizing it. She’s thoughtful with her words, gentle with people, and strong in all the ways that matter. Warm-hearted, wildly creative, funny in that quiet, sneaky way, and wise beyond her years. She's not just a good human — she's the best one you’ll ever meet.</p>
     </div>
     <div class="news-item">
       <img src="/Head-Office/Head-off-pics/WhatsApp Image 2025-04-21 at 10.17.48 AM.jpeg" alt="Sophia Rout">
       <h2>Sophia Rout: Best Friend</h2>
-      <p>The kind of friend who is always there and just gets it — no explanations, no judgment...</p>
+      <p>The kind of friend who is always there and just gets it — no explanations, no judgment, just snacks, giggles and loyalty.</p>
     </div>
   </div>
 
@@ -240,28 +250,30 @@
     <div class="extra-news-item">
       <img src="/Head-Office/Head-off-pics/Screenshot_2025-04-08-19-26-17-29_99c04817c0de5652397fc8b56c3b3817.jpg" alt="Sophia Rout">
       <h2>Sophia Rout: Best Singer</h2>
-      <p>She’s not the loudest in the room, but her voice is a soft thread in the song—sweet, steady...</p>
+      <p>She’s not the loudest in the room, but her voice is a soft thread in the song—sweet, steady, irreplaceable. Without her, it just doesn’t sound right. And when she sings, everything fits. The harmony, the warmth, the magic—it’s all her.</p>
     </div>
     <div class="extra-news-item">
       <img src="/Head-Office/Head-off-pics/IMG-20250409-WA0007.jpg" alt="Sophia Rout">
       <h2>Sophia Rout: Best Artist</h2>
-      <p>She creates beauty without even realizing it. Her hands express what words can’t...</p>
+      <p>She creates beauty without even realizing it. Her hands express what words can’t. She’ll never say her work is special—but it is. It always is.</p>
     </div>
+    <!-- New extra news tile -->
     <div class="extra-news-item-new">
       <img src="/Head-Office/Head-off-pics/WhatsApp Image 2025-04-13 at 4.10.57 PM.jpeg" alt="Sophia Rout">
       <h2>Sophia Rout: Best Muse</h2>
-      <p>If I could turn every thought of you into music, this would be the playlist...<br>
-        <a href="https://open.spotify.com/playlist/7LRTDkSbquZY3yCbd5z0R0?si=45BGuG1YT3-VwW6-KUtDCQ&pi=5W_JPrRUS9CND" target="_blank" style="color: #0077ff; text-decoration: underline;">Click here for the Sophia Rout playlist</a>
+      <p>If I could turn every thought of you into music, this would be the playlist. It’s your 20th birthday, so here are 20 songs that remind me of you. There’s a little story in each of these 20 songs. Some are about you. Some are about how I feel because of you. Some hold a special memory of you. All are for you.<br>
+        <a href="https://open.spotify.com/playlist/7LRTDkSbquZY3yCbd5z0R0?si=45BGuG1YT3-VwW6-KUtDCQ&pi=5W_JPrRUS9CND" target="_blank" style="color: #0077ff; text-decoration: underline;">
+    Click here for the Sophia Rout playlist</a>
       </p>
     </div>
   </div>
+
+  <button class="back-button" onclick="window.history.back();">⬅️ Back</button>
 
   <div class="footer">
     <p>Made with all my heart, for my heart ❤️</p>
     <p>Always and forever,</p>
     <p>Arpan.</p>
   </div>
-
-  <button class="back-button" onclick="window.history.back();">⬅️ Back</button>
 </body>
 </html>
